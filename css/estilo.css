@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&family=Roboto:wght@100;400;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 900px;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+body{ 
+    font-family: 'Roboto', sans-serif;
+}
+.banner{ 
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+     }
+    
+    
+    .nosotros{
+        padding: 10px, 100px;
+        text-align: center;
+        margin: 40px, 0px;
+    }
+.menu .logo{
+    color: white;
+    font-size: 25px;
+    line-height: 70px;
+    font-weight: 900;
+    margin-left: 35px;
+}
+
+.menu ul{
+    float: right;
+    margin: 10px;
+}
+.menu ul li {
+    display: inline-block;
+    margin: 30px 15px;
+}
+
+.menu ul li a{
+    font-size: 16px;
+    padding: 8px 6px;
+    text-decoration: none;
+    transition: 0.8s all;
+}
+.menu ul li a:hover{
+    color: yellow;
+}
+.menu{
+    background-color: black;
+}
+.img-logo{
+    width: 120px;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+h1,h2, figure, ul{
+    margin: 0;
+}
+img{
+max-width: 100%;
+}
+
+.seccion1{
+    background-color:antiquewhite ;
+}
+
+.video{
+    width: 55%;
+    padding: 8px;
+
+}
+
+.texto{
+    width: 30%;
+    padding: 8px;
+    vertical-align: top;
+}
+
+.article{
+    padding: 30px;
+    background-color:antiquewhite ;
+
+}
+
+article h2{
+    border-bottom: 1px solid black;
+}
+
+.texto, .video{
+    display: inline-block;
+}
+.titulo{
+    font-family: 'Amaranth', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-size: 33px;
+    text-align: center;
+}
+
+.linea{
+    width: 200px;
+    height: 6px;
+    background-color: #36BFB1;
+    margin: 10px auto;
+    border-radius: 5px;
+    margin-bottom: 30px;
+
+}
+
+.boton{
+    background-color: #36BFB1;
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 40px auto 0;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 15px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.boton:hover{
+    background-color: #038C73;
+    box-shadow: 5px 5px 5px gray;
+}
+
+{
+	padding: 0;
+	margin: 0;
+	font-family: century gothic;
+	text-align: center;
+}
+
+form {
+	padding: 50px 20px;
+	background-color: #ededed;
+	margin: calc(25% + 100px);
+	margin-top: 70px;
+	padding-top: 28px;
+	margin-bottom: 30px
+}
+
+h1 {
+	text-align: center;
+	padding: 12px;
+	color: #444
+}
+
+input {
+	width: calc(100% - 20px);
+	padding: 9px;
+	margin: auto;
+	margin-top: 12px;
+	font-size: 16px
+}
+
+input[type='submit']{
+	background-color: #48e;
+	color: #fff;
+	width: calc(80% - 20px);
+	margin: 0 10%;
+	margin-top: 22px;
+	border: none;
+}
+
+
+.ok {
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #1e6;
+	color: #fff
+}
+.bad {
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #a22;
+	color: #fff
+}
+
+.redes{
+    background-color: black;
+    color: #36BFB1;
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+}
+
+.espacio{
+    margin: 20px 20;
+}
+@media(max-width: 700px){
+  .computador{
+    width: 30px;
+    position: absolute;
+    top: 40px;
+    transform: translateY(-50%);
+
+  }
+  .computador span{
+    margin-bottom: 3px;
+    background-color: white;
+    display: block;
+    height: 3px;
+
+  }
+  .menu.logo{
+    margin-left: 50px;
+}
+
+.menu{
+    position: relative;
+}
+nav ul{
+    float: none ;
+    width: 300;
+    padding: 0;
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    margin: 0;
+    padding-top: 60;
+    transition: 1s;
+    left: -100%;
+    z-index: 2;
+
+}
+
+.open{
+    left: 0;
+}
+.menu ul li {
+display: block;
+float: none;
+}
+
+.menu ul li a{
+    font-size: 18px;
+    padding: 10px 40px;
+}
+.close{
+    display: block;
+    position: absolute;
+    width:  50px;
+    height: 50px;
+    right: 10px;
+    top: 15px;
+    color: skyblue;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media(max-width: 850px){
+    .tecnologias .row{
+        grid-template-columns: auto auto ;
+}
+}
+@media(max-width: 550px){
+    .tecnologias .row{
+        grid-template-columns: auto;
+}
+}
